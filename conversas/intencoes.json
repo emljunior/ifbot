@@ -1,0 +1,39 @@
+{
+"intents": [
+    {
+        "tag": "saudacao",
+        "patterns": ["oi", "olá", "bom dia", "boa tarde", "boa noite"],
+        "responses": ["Olá! Como posso ajudar?", "Oi! Em que posso ser útil?"]
+    },
+    {
+        "tag": "despedida",
+        "patterns": ["tchau", "adeus", "até logo", "até mais"],
+        "responses": ["Até logo!", "Tchau! Volte sempre."]
+    },
+    {
+        "tag": "ajuda",
+        "patterns": ["Onde encontro o manual do sistema?", "manual","ajuda"],
+        "responses": ["http://certificados.ifba.edu.br/manual.pdf"]
+    },
+    {
+        "tag": "ajuda",
+        "patterns": ["Prefiro contato por e-mail", "e-mail "],
+        "responses": ["certificados.vdc@ifba.edu.br"]
+    },
+    {
+        "tag": "ajuda",
+        "patterns": ["Como acesso o sistema?", "Logar no sistema"],
+        "responses": ["http://certificados.conquista.ifba.edu.br/login"]
+    },
+    {
+        "tag": "ajuda",
+        "patterns": ["Quem é responsável pelo sistema?","Responsável"],
+        "responses": ["Fulano de Tal."]
+    },    
+    {
+        "tag": "agradecimento",
+        "patterns": ["obrigado", "valeu", "agradeço"],
+        "responses": ["De nada!", "Não há de quê!", "Estou aqui para ajudar!"]
+    }
+]
+}

@@ -1,0 +1,20 @@
+{
+    "conversas": [
+        {
+            "mensagens": ["Olá", "Oi"],
+            "resposta": "Olá, sou um robô de atendimento IFBot."
+        },
+        {
+            "mensagens": ["Bom dia"],
+            "resposta": "Bom dia! Sou um robô de atendimento IFBot."
+        },
+        {
+            "mensagens": ["Boa tarde"],
+            "resposta": "Boa tarde! Sou um robô de atendimento IFBot."
+        },
+        {
+            "mensagens": ["Boa noite"],
+            "resposta": "Boa noite! Sou um robô de atendimento IFBot."
+        }
+    ]
+}

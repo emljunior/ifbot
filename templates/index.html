@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IFBot</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <button id="toggleChatbot" class="toggle-chatbot">
+        <img src="{{ url_for('static', filename='images/chatbox-icon.svg') }}" />
+    </button>
+    <div id="chatbox" class="chatbox">
+        <div class="header">
+            <img src="{{ url_for('static', filename='images/chatbox-icon.svg') }}" alt="image">
+            IFBot
+            <button id="resetChat">Reiniciar conversa</button>
+        </div>
+        <div id="messages" class="messages"></div>
+        <div class="input-container">
+            <input type="text" id="userInput" placeholder="Digite sua mensagem...">
+            <button id="sendButton">Enviar</button>
+        </div>
+        <form id="uploadForm" enctype="multipart/form-data" style="display: none;">
+            <input type="file" name="file">
+            <button type="button" id="uploadButton">Anexar</button>
+        </form>
+        <button type="button" id="sendEmailButton" style="display: none;">Enviar E-mail</button>
+    </div>
+    <script
+        src="{{ url_for('static', filename='chatbot.js') }}">
+    </script>
+</body>
+</html>
+

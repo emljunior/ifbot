@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<link rel="stylesheet" href="{{ url_for('front', filename='style.css') }}">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Chatbot</title>
+</head>
+<body>
+<div class="container">
+    <div class="chatbox">
+        <div class="chatbox__support">
+            <div class="chatbox__header">
+                <div class="chatbox__image--header">
+                    <img src="https://img.icons8.com/color/48/000000/circled-user-female-skin-type-5--v1.png" alt="image">
+                </div>
+                <div class="chatbox__content--header">
+                    <h4 class="chatbox__heading--header">IFBot</h4>
+                    <p class="chatbox__description--header">Olá. Meu nome é IFBot. Como posso ajudar você?</p>
+                </div>
+            </div>
+            <div class="chatbox__messages">
+                <div></div>
+            </div>
+            <div class="chatbox__footer">
+                <input type="text" placeholder="Mensagem...">
+                <button class="chatbox__send--footer send__button">Enviar</button>
+            </div>
+        </div>
+        <div class="chatbox__button">
+            <button><img src="{{ url_for('front', filename='imagens/chatbox-icon.svg') }}" /></button>
+        </div>
+    </div>
+</div>
+
+    <script type="text/javascript">
+        $SCRIPT_ROOT = {{request.script_root|tojson}};
+    </script>
+    <script type="text/javascript" src="{{ url_for('front', filename='app.js') }}"></script>
+
+</body>
+</html>

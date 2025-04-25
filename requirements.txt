@@ -1,0 +1,6 @@
+nltk
+chatterbot
+chatterbot_corpus
+flask
+spacy
+mysql-connector-python

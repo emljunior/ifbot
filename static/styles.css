@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.chatbox {
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    width: 400px;
+    max-height: 600px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: none; /* Inicialmente escondido */
+}
+
+.header {
+    background-color: #4a8f4a;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.messages {
+    flex-grow: 1;
+    padding: 10px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-container {
+    display: flex;
+    border-top: 1px solid #ccc;
+}
+
+.input-container input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+}
+
+.input-container button {
+    padding: 10px;
+    background-color: #4a8f4a;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.options button {
+    margin: 5px 0;
+    padding: 10px;
+    background-color: #4a8f4a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button {
+    margin: 5px 0;
+    padding: 10px;
+    background-color: #4a8f4a;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #1e6d1e;
+}
+
+.message {
+    margin: 5px 0;
+    padding: 10px;
+}
+
+.message.user {
+    background-color: #dbe4d4;
+    color: rgb(0, 0, 0);
+    align-self: flex-end;
+    border-radius: 10px 10px 0px
+}
+
+.message.bot {
+    background-color: #f1f1f1;
+    color: black;
+    align-self: flex-start;
+    border-radius: 0px 10px 10px
+}
+
+.upload-form {
+    display: none;
+}
+
+.toggle-chatbot {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4a8f4a;
+    color: white;
+    cursor: pointer;
+}
+

@@ -1,0 +1,12 @@
+{
+    "responses": [
+        {
+            "question": "Olá",
+            "answer": "Olá! Como posso ajudar você hoje?"
+        },
+        {
+            "question": "Qual o seu nome?",
+            "answer": "Eu sou um chatbot criado em Python."
+        }
+    ]
+}
